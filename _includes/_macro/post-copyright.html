@@ -1,0 +1,38 @@
+{% if site.post_copyright.enable %}
+  <ul class="post-copyright">
+
+    <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <!-- JS库 sweetalert 可修改路径 -->
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <li class="post-copyright-author">
+      <strong>{{ __.post.copyright.author | append: __.symbol.colon }}</strong>
+      {{ site.author }}
+    </li>
+    <li class="post-copyright-link">
+      <strong>{{ __.post.copyright.link | append: __.symbol.colon }}</strong>
+      <a href="{{ post.url | absolute_url }}" title="{{ page.title }}">{{ page.url | absolute_url }}</a>
+      <span class="copy-url"  title="点击复制文章链接">
+        <i class="fa fa-clipboard" data-clipboard-text="{{ page.url | absolute_url }}"  aria-label="复制成功！"></i>
+      </span>
+    </li>
+    <li class="post-copyright-license">
+      <strong>{{ __.post.copyright.license_title | append: __.symbol.colon }} </strong>
+      {{ __.post.copyright.license_content | replace_first: '%s', site.post_copyright.license_url | replace_first: '%s', site.post_copyright.license }}
+    </li>
+  </ul>
+  <script>
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({
+          title: "",
+          text: '复制成功',
+          icon: "success",
+          showConfirmButton: false
+          });
+      });
+    });
+  </script>
+{% endif %}
