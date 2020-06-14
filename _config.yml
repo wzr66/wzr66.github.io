@@ -221,7 +221,7 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/wzrblog
+  GitHub: https://github.com/wzr66
   博客园: https://www.cnblogs.com/ziru
   CSDN: https://me.csdn.net/qq_43458666
   E-mail: wzr_@outlook.com
@@ -236,8 +236,8 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  博客园: blog
-  CSDN: keycdn
+  博客园: spinner
+  CSDN: crosshairs
   E-mail: envelope
 
 
