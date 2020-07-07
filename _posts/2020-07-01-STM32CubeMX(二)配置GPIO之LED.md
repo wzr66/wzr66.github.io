@@ -2,7 +2,7 @@
 title:           STM32CubeMX(二)配置GPIO之LED
 description:     使用STM32CubeMX配置GPIO点亮LED实现流水灯
 author:          WZR
-categories:S
+categories:
     - STM32CubeMX学习
 tags:
     - STM32CubeMX
