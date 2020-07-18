@@ -222,6 +222,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   GitHub: https://github.com/wzr66
+  Gitee: https://gitee.com/wziru
   博客园: https://www.cnblogs.com/ziru
   CSDN: https://me.csdn.net/qq_43458666
   E-mail: wzr_@outlook.com
@@ -236,6 +237,7 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
+  Gitee: meh-o
   博客园: spinner
   CSDN: crosshairs
   E-mail: envelope
