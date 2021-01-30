@@ -8,9 +8,9 @@ tags:
     - Linux
     - ubuntu
     - nfs
-	- ssh
-	- ftp
-	- tftp
+    - ssh
+    - ftp
+    - tftp
 ---
 
 >Ubuntu安装并开启nfs，ssh，ftp，tftp服务，与windows，开发板互传文件，系统为Ubuntu16.04LTS，虚拟机为VM15Pro，电脑系统为WIN10，开发板为正点原子阿尔法IMX6ULL。
@@ -91,7 +91,7 @@ sudo /etc/init.d/nfs-kernel-server restart
 安装tftp服务
 
 ```shell
-sudo apt-get install tftp-hpa tftpd-hpa 
+sudo apt-get install tftp-hpa tftpd-hpa
 sudo apt-get install xinetd
 ```
 
@@ -111,7 +111,7 @@ sudo vim /etc/xinetd.d/tftp
 输入配置内容
 
 ```shell
-server tftp 
+server tftp
 {
 	socket_type 	= dgram
 	protocol 		= udp
